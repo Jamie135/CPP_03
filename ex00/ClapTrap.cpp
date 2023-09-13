@@ -8,7 +8,7 @@ ClapTrap::ClapTrap()
 	this->attackdmg = 0;
 }
 
-ClapTrap::ClapTrap(const std::string &name)
+ClapTrap::ClapTrap(std::string name)
 {
 	std::cout << "ClapTrap " << this->name << " Constructor called" << std::endl;
 	this->name = name;
@@ -25,6 +25,6 @@ ClapTrap::ClapTrap(ClapTrap &copy)
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "ClapTrap " << name << " Destructor called" << std::endl;
+	std::cout << "ClapTrap " << this->name << " Destructor called" << std::endl;
 }
 

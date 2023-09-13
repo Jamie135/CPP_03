@@ -12,7 +12,7 @@ private:
 	unsigned int	attackdmg;
 public:
 	ClapTrap();
-	ClapTrap(const std::string &name);
+	ClapTrap(std::string name);
 	ClapTrap(ClapTrap &copy);
 	~ClapTrap();
 	void	attack(const std::string &target);
