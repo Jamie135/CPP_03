@@ -28,3 +28,12 @@ ClapTrap::~ClapTrap()
 	std::cout << "ClapTrap " << this->name << " Destructor called" << std::endl;
 }
 
+ClapTrap &ClapTrap::operator=(const ClapTrap &src)
+{
+	std::cout << "ClapTrap Assignation operator called" << std::endl;
+	this->name = src.name;
+	this->hp = src.hp;
+	this->energy = src.energy;
+	this->attackdmg = src.attackdmg;
+	return *this;
+}
