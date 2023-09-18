@@ -17,7 +17,7 @@ ClapTrap::ClapTrap(std::string name)
 	this->attackdmg = 0;
 }
 
-ClapTrap::ClapTrap(ClapTrap &copy)
+ClapTrap::ClapTrap(const ClapTrap &copy)
 {
 	std::cout << "ClapTrap Copy constructor called" << std::endl;
 	*this = copy;

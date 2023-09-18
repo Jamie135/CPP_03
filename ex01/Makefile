@@ -1,10 +1,12 @@
-NAME = ClapTrap
+NAME = ScavTrap
 CC = clang++
 FLAGS = -Wall -Wextra -Werror -std=c++98
 FILES = ClapTrap \
+		ScavTrap \
 		main
 
-INCLS = ClapTrap.hpp
+INCLS = ClapTrap.hpp \
+		ScavTrap.hpp
 
 SRCS = $(addsuffix .cpp, $(FILES))
 OBJS = $(addsuffix .o, $(FILES))
