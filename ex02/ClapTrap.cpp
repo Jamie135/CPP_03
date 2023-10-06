@@ -10,11 +10,11 @@ ClapTrap::ClapTrap()
 
 ClapTrap::ClapTrap(std::string name)
 {
-	std::cout << "ClapTrap " << this->name << " Constructor called" << std::endl;
 	this->name = name;
 	this->hp = 10;
 	this->energy = 10;
 	this->attackdmg = 0;
+	std::cout << "ClapTrap " << this->name << " Constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &copy)
