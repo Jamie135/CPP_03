@@ -41,7 +41,7 @@ int main()
 		e.attack("Godmother");
 		e.takeDamage(101);
 		e.takeDamage(1);
-		e.attack("some random dude");
+		e.attack("Rumpelstiltskin");
 		f.highFivesGuys();
 		std::cout << "\033[34mDeconstructing\033[0m" << std::endl;
 	}
