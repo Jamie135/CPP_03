@@ -37,7 +37,7 @@ int main()
 	std::cout << "\n\n### TESTING FRAGTRAP ###\n" << std::endl;
 	{
 		std::cout << "\033[34mConstructing\033[0m" << std::endl;
-		FragTrap e;
+		FragTrap e("Roger");
 		FragTrap f("Chadd");
 
 		std::cout << "\033[34mTesting\033[0m" << std::endl;
