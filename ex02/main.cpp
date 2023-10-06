@@ -13,8 +13,6 @@ int main()
 	a.beRepaired(5);
 	a.attack("Farquaad");
 	b.beRepaired(3);
-	for (int i = 0; i < 12; i++)
-		b.attack("Charming");
 	b.beRepaired(3);
 	std::cout << "\033[34mDeconstructor\033[0m" << std::endl;
 	std::cout << "\033[34mConstructor\033[0m" << std::endl;
@@ -22,8 +20,6 @@ int main()
 	ScavTrap d("Fiona");
 	std::cout << "\033[34mTesting\033[0m" << std::endl;
 	c.attack("Dragon");
-	// for (int i = 0; i < 50; i++)
-	// 	c.attack("Dragon");
 	c.beRepaired(22);
 	c.takeDamage(21);
 	c.beRepaired(22);
@@ -37,12 +33,12 @@ int main()
 	std::cout << "\n\n### TESTING FRAGTRAP ###\n" << std::endl;
 	{
 		std::cout << "\033[34mConstructing\033[0m" << std::endl;
-		FragTrap e("Roger");
-		FragTrap f("Chadd");
+		FragTrap e("Gingerbread");
+		FragTrap f("Doris");
 
 		std::cout << "\033[34mTesting\033[0m" << std::endl;
 		e.highFivesGuys();
-		e.attack("some random dude");
+		e.attack("Godmother");
 		e.takeDamage(101);
 		e.takeDamage(1);
 		e.attack("some random dude");

@@ -1,45 +1,47 @@
 #include "FragTrap.hpp"
 
+// Constructors
 FragTrap::FragTrap(): ClapTrap()
 {
-	setHP(100);
-	setEnergy(100);
-	setAttack(30);
+	this->hp = 100;
+	this->energy = 100;
+	this->attackdmg = 30;
 	std::cout << "FragTrap Default Constructor called" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap &copy): ClapTrap(copy.getName())
+FragTrap::FragTrap(const FragTrap &copy): ClapTrap(copy)
 {
-	setHP(100);
-	setEnergy(100);
-	setAttack(30);
 	std::cout << "FragTrap Copy Constructor called" << std::endl;
 }
 
 FragTrap::FragTrap(std::string name): ClapTrap(name)
 {
-	setHP(100);
-	setEnergy(100);
-	setAttack(30);
-	std::cout << "FragTrap Constructor for the name " << getName() << " called" << std::endl;
+	this->hp = 100;
+	this->energy = 100;
+	this->attackdmg = 30;
+	std::cout << "FragTrap Constructor for the name " << this->name << " called" << std::endl;
 }
 
+// Deconstructors
 FragTrap::~FragTrap()
 {
-	std::cout << "FragTrap Deconstructor for " << getName() << " called" << std::endl;
+	std::cout << "FragTrap Deconstructor for " << this->name << " called" << std::endl;
 }
 
+// Overloaded Operators
 FragTrap &FragTrap::operator=(const FragTrap &src)
 {
 	std::cout << "FragTrap Assignation operator called" << std::endl;
-	setName(src.getName());
-	setHP(src.getHP());
-	setEnergy(src.getEnergy());
-	setAttack(src.getAttack());
+	this->name = src.name;
+	this->hp = src.hp;
+	this->energy = src.energy;
+	this->attackdmg = src.attackdmg;
 	return *this;
 }
 
+// Public Methods
+
 void	FragTrap::highFivesGuys(void)
 {
-	std::cout << "FragTrap " << getName() << ": You want a high five?\n\t*WHAMM*\nHere you go." << std::endl;
+	std::cout << "FragTrap " << this->name << ": You want a high five?\n\t*WHAMM*\nHere you go." << std::endl;
 }
