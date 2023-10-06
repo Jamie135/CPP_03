@@ -4,7 +4,7 @@ int main()
 {
 	std::cout << "Constructor" << std::endl;
 	ClapTrap a("Shrek");
-	ClapTrap b("Puss");
+	ClapTrap b("PussInBoots");
 
 	a.attack("Farquaad");
 	a.takeDamage(10);
