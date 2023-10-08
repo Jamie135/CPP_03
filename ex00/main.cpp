@@ -4,7 +4,7 @@ int main()
 {
 	std::cout << "Constructor" << std::endl;
 	ClapTrap a("Shrek");
-	ClapTrap b("PussInBoots");
+	ClapTrap b("Fiona");
 
 	a.attack("Farquaad");
 	a.takeDamage(10);
@@ -15,6 +15,6 @@ int main()
 	for (int i = 0; i < 12; i++)
 		b.attack("Charming");
 	b.beRepaired(3);
-	std::cout << "Deconstructor" << std::endl;
+	std::cout << "Destructor" << std::endl;
 	return (0);
 }
